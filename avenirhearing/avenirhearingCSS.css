@@ -1,0 +1,357 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Raleway"), url("http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2") format("woff2"), url("http://fonts.gstatic.com/s/raleway/v9/IczWvq5y_Cwwv_rBjOtT0w.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Old Standard TT";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Old Standard TT Italic"), local("OldStandardTT-Italic"), url("http://fonts.gstatic.com/s/oldstandardtt/v7/QQT_AUSp4AV4dpJfIN7U5FQ6NBT6gvjJm6dP1MVY-i0.woff2") format("woff2"), url("http://fonts.gstatic.com/s/oldstandardtt/v7/QQT_AUSp4AV4dpJfIN7U5KCfO6YLYlwZkGaKgYrym0o.woff") format("woff");
+}
+
+html, body, div, .home{
+    line-height: 1.4;
+    box-sizing:border-box;
+    font-family: Raleway;
+    color:#3a3c41;
+}
+
+.whiteText{ color:white; }
+
+.columns{ padding: 0 .9375em; }
+
+a{ text-decoration:none; }
+li{ list-style:none;}
+
+hr{
+    border:0;
+    border-bottom: 1px solid #D5D5D5;
+    margin-left: 1.74em;
+}
+
+.halfPage{
+    width: 42%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.topContainer{
+    padding: 2em 2em 8em;
+    background-size: cover;
+    background-image: url('images/home-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.newExperience h1, .welcomeContainer h1{
+    text-align: left;
+    font-size: 3em;
+    font-weight:normal;
+    line-height: 1.2em;
+    margin: .2em 0 .5em;
+}
+
+.button{
+    padding: .8em 2em 1em;
+    font-weight:bold;
+    font-size: 1.125em;
+    text-decoration: none;
+    text-align:left !important;
+    background-color: #ff684c;
+}
+
+.button:hover, .learnButton:hover{ background-color: #DB5A41; }
+
+.appointment{
+    position: relative;
+    width:100%;
+    font-size: 14px;
+    font-weight:bold;
+    margin-bottom: 5em;
+}
+
+.appointment h3{
+    position:absolute;
+    top:-2.55em;
+    background-color: #3a3c41;
+    padding: .5em 1em .5em;
+    width: 13em;
+    font-size: 1em;
+    line-height: 1.6;
+    background-image: url('images/arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.appointment form{
+    background-color: #ff684c;
+    padding: .9375em;
+}
+
+.appointment form input{
+    float: left;
+    width: 24.05%;
+    background:none;
+    border: 0;
+    padding: .9375em;
+    border-bottom: 2px solid #ffb2a4;
+    box-shadow: 0 0 0;
+    font-weight:bold;
+    margin-left: 1.2%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.smallButton{
+    box-shadow:none;
+    border:0;
+    font-weight:bold;
+    background-color: #3a3c41;
+    text-decoration: none;
+    font-size: 15px;
+    padding: .7em 2em;
+    margin-top: .2em;
+    float:right;
+}
+
+.infoContainer{
+    background-color:#f5efeb;
+    padding: 0 2em 10em;
+}
+
+.welcomeContainer{ padding: 4em 0; }
+
+.welcomeContainer h1, .processContainer h2, .teamContainer h2{
+    font-size: 30px;
+    margin-top: .2em;
+}
+
+.welcomeContainer p, .process p, .member p, .legalContainer a{
+    line-height: 1.6;
+    font-size: 18px;
+    color: #999ca5;
+    margin-bottom:30px;
+    font-weight: normal;
+}
+
+.processContainer h2, .teamContainer h2 {
+    background-image: url('images/bg-title.gif');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    text-align: left;
+    margin-bottom: 60px;
+    padding-bottom: .1em;
+}
+
+.processContainer{ padding-bottom: 10em; }
+
+.process{
+    width: 31%;
+    height: auto;
+    box-sizing: border-box;
+    text-align:center;
+    position:relative;
+    background-color: white;
+    float:left;
+    margin-right: 2em;
+    padding:50px 3em 20px !important;
+}
+
+.process h3, .member h3, .testimonialContainer h3{
+    font-weight: bold;
+    background-image: url('images/sep.gif');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 26px;
+    margin-bottom: 1em;
+    box-sizing:border-box;
+}
+
+.learnButton{
+    background-color: #ff684c;
+    float: none;
+    position:absolute;
+    bottom:-1em;
+    left: 32%;
+    padding: .55em 2em;
+}
+
+.member{
+    background-color:white;
+    margin-right: 2em;
+    float:left;
+    position:relative;
+    text-align:center;
+    width: 22%;
+    float: left;
+    box-sizing:border-box;
+}
+
+.teamContainer span{
+    background-image: url('images/arrows.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    z-index:200;
+    top: 55%;
+    left:-10px;
+}
+
+.nextArrow{
+    background-position:right bottom;
+    right: 2em !important;
+    left:auto !important;
+}
+
+.testimonialContainer{
+    padding: 4em 1em;
+    background-color: #d8cfca;
+    text-align:center;
+}
+
+.testimonialContainer .testimonialHead, .testimonialContainer em{
+    font-size: 36px;
+    font-family: "Old Standard TT";
+    font-style: italic;
+    line-height: 1.6em;
+    margin-bottom: 24px;
+    font-weight:300;
+}
+
+.testimonialContainer img{
+    margin:0 auto;
+    border-radius: 200px;
+}
+
+.picTestimonial{
+    background-image: url('images/arrows-t.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.testimonialContainer p{
+    padding: 1em;
+    color: #6f6f6f;
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+.contactInfoContainer{
+    background-color: #ff684c;
+    padding: 80px 0 90px;
+}
+
+.contactInfoContainer p{
+    font-size: 30px;
+    line-height: 34px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.contactInfoContainer a{ border-bottom: 1px dotted white; }
+
+.containInfoContainer a:hover{ color:#ff684c; }
+
+.footerContainer{
+    padding: 100px 2em;
+    background-color: #3a3c41;
+}
+
+.footerContainer h6 {
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footerInfo{
+    float:left;
+    width: 25%;
+    padding-bottom: 6em;
+}
+.footerContainer p{
+    color: #999ca5;
+    font-size: 14px;
+    margin-bottom:24px;
+    line-height: 1.6;
+}
+
+.footerContainer .inputEmail{
+    font-size: 14px;
+    font-family: Raleway;
+    background-color: #515359;
+    color: #999ca5;
+    height: 2.315em;
+    width: 80%;
+    border:0;
+    padding:.2em .5em;
+    float:left;
+    box-sizing:border-box;
+}
+
+.emailSubmit{
+    float: left;
+    font-size: 14px;
+    background-color:#ff684c;
+    border:0;
+    height: 2.3em;
+    width: 18%;
+}
+
+.borderBottom{
+    padding-bottom: .7em;
+    border:0;
+    border-bottom: 1px solid #4a4c52;
+}
+
+.legalContainer{ padding: 24px 0 5em; }
+
+.legalContainer li, .headerContainer li{
+    float:left;
+    margin-right:1em;
+}
+.legalContainer a{ font-size: 14px; }
+
+.legalContainer a:hover{ color:white; }
+
+.headerContainer{
+    position:fixed;
+    z-index: 999;
+    top:0;
+    width:100%;
+    height:88px;
+    background-color: #36373b;
+}
+
+.headerContainer ul{
+    position: relative;
+    padding: 2em 3em;
+    box-sizing: border-box;
+}
+
+.headerContainer #logo{
+    background-image: url('images/logo-small.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:0 auto;
+    padding: 1em 3em;
+    height: 57px;
+    width: 57px;
+    display:inline-flex;
+}
+
+.headerContainer a{
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+a.active, .headerContainer a.whiteText:hover{ border-bottom: 3px solid #ff684c}
